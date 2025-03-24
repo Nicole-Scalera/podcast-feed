@@ -1,0 +1,35 @@
+V1 - GitHub Actions
+
+A. General Notes
+- GitHub Actions make it easier to automate project and tasks.
+- This can be on a timer, or when a specific event occurs.
+	- e.g. pushing a new branch, opening a PR.
+
+- You can create your own actions or use pre-built ones.
+	- See GitHub marketplace.
+
+B. Course Overview
+- Narrator (Ray Villaobos) will be constructing a feed for a podcast.
+- Technical details:
+	1. XML files, RSS format.
+		- RSS is a markup language like HTML, but it's specifically used for syndicating XML content.
+		- Usually used for news and podcast content.
+	2. YAML Syntax
+		- Ray will also be writing in the YAML Syntax to write information about his podcast.
+	3. GitHub Action
+		- Lastly, he will use a GitHub Action to generate the podcast feed.
+		- He's using an action because "XML and RSS are difficult to create."
+
+C. Building Actions
+- GitHub Pages
+	- Can host static pages for free.
+- Python
+	- Will be using Python to parse YAML into XML.
+- Docker
+	- Will need Docker file to publish to GitHub marketplace.
+	- GitHub actions utilizes this to build a container that will run our action in the cloud.
+- Bash Scripting
+	- Will need bash scripts to run Python files and also make sure changes are pushed back to GitHub.
+
+D. Sample Code
+- Ray shared some sample code on this repo: https://github.com/LinkedInLearning/github-practical-actions-4412872
