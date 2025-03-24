@@ -1,0 +1,29 @@
+V2 - Creating a Repo and GitHub Pages
+
+A. General Notes
+- Create a new repo for this project.
+- Need to grab files from the sample code repo: https://github.com/LinkedInLearning/github-practical-actions-4412872
+
+B. Code Samples
+- Go to 01_02b branch, grab the following items:
+	- audio (folder)
+	- images (folder)
+	- README-feed.md
+	- feed.yaml
+- Download ZIP file and extract these contents into repo.
+
+C. Edit Files
+- Rename the README-feed.md file as README.md to act as the repo's official README.
+
+D. GitHub Pages
+- Go to Settings > GitHub Pages.
+- For Source option, stay with "Deploy from a branch"
+- For Branch option, stay with main and root folder.
+- Then hit Save and give it time to deploy.
+- Once done, it will give you a URL to find page.
+	- Page should display README file.
+- Can edit URL to access any other files on the page as well.
+
+E. GitHub Actions
+- Even though we didn't use "GitHub Actions" for Source, this does count as an action, which will appear in the Actions tab.
+- GitHub Actions ran a workflow that created the page.
