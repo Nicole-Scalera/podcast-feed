@@ -1,0 +1,43 @@
+V3 - Python to Process YAML with Codespaces
+
+A. General Notes
+- Created a codespace on main.
+- This is so that I don't have to install all the packages on my local.
+	- However, I will still take notes locally.
+
+B. Set up Feed.py
+- Create python file feed.py.
+- Import the following packages:
+	- yaml
+	- xml.etree.ElementTree as "xml_tree"
+- Open feed.yaml document and load it into a variable called yaml_data.
+- Use safe_load to load up the file.
+
+C. RSS Feed Sample
+- Set up RSS Feed Sample with simple rss element.
+	- In the element, create an rss tag.
+- For attributes, convert equals (=) to colons (:).
+- Also convert double quotes to single.
+- Move all the attributes into the rss element.
+
+D. Apple Sample Code
+- Ray is using "A Podcaster's Guide to RSS" from Apple for RSS reference.
+- Notes that the <channel> tag has most of the information about the podcast channel.
+
+E. Creating Channel Tag
+- channel_element is a sub element of the xml tree.
+- This will go inside the rss element and will just be called "channel"
+	- Won't have any sub data for now.
+- In xml_treeSubElement, we target the channel_element and give it a "title" tag.
+- Put text in there that grabs data from the yaml file.
+	- All that data from the yaml file is now in an object called yaml_data.
+
+F. Output
+- Create output_tree that is an xml_tree element.
+- The element we built is going to be fed into the output tree, which will send it out into a separate file.
+- Write file with the following attributes:
+	- 'podcast.xml'
+	- encoding='UTF-8'
+	- xml_declaration=True
+- Pull up terminal and execute with "python feed.py"
+- This will create a new file named podcast.xml, which contains the data we put together in feed.py
